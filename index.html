@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GrowGlobal – A Responsive Digital Platform to Help Local Businesses Reach Global Customers. Built for Web Technology Academic Microproject 25CS208." />
+  <meta name="keywords" content="GrowGlobal, local to global, web technology, academic microproject, responsive web design, local business digital platform" />
+  <meta name="author" content="GrowGlobal Development Team" />
+  <title>GrowGlobal – From Local Business to Global Brand</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+
+  <!-- Theme Script (Early execution prevents FOUC) -->
+  <script src="js/theme.js"></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. NAVIGATION BAR
+       ====================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-nav">
+      <!-- Logo & Brand -->
+      <a href="index.html" class="nav-brand" aria-label="GrowGlobal Homepage">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+        </div>
+        <span>Grow<strong style="color: var(--color-primary);">Global</strong></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#howItWorks" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Items & Theme Switch -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme mode" title="Toggle theme mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle></svg>
+        </button>
+
+        <!-- Auth Links -->
+        <a href="signin.html" class="btn btn-ghost btn-sm">Sign In</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
+      <div class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#features" class="mobile-nav-link">Features</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#howItWorks" class="mobile-nav-link">How It Works</a>
+        <a href="#pricing" class="mobile-nav-link">Pricing</a>
+        <a href="#testimonials" class="mobile-nav-link">About</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="home.html" class="mobile-nav-link" style="color: var(--color-primary);">Business Dashboard &rarr;</a>
+      </div>
+      <div class="mobile-nav-actions">
+        <a href="register.html" class="btn btn-primary btn-block">Get Started (Register)</a>
+        <a href="signin.html" class="btn btn-secondary btn-block">Sign In to Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         2. HERO SECTION
+         ==================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow-bg"></div>
+      <div class="container hero-grid">
+        <!-- Left: Copy & Actions -->
+        <div class="hero-content">
+          <div class="badge badge-primary">
+            <span>25CS208 Academic Microproject 2026–2027</span>
+          </div>
+          <h1>
+            Take Your Business From <span class="gradient-text">Local to Global.</span>
+          </h1>
+          <p>
+            Build your digital presence, showcase your products and connect with customers worldwide. GrowGlobal transforms traditional local businesses into international digital brands with high-performance responsive web technology.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <span>Build My Website</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+            <a href="home.html" class="btn btn-outline btn-lg" style="border-style: dashed;">Live Dashboard Demo &rarr;</a>
+          </div>
+
+          <div class="hero-trust-badges">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>100% Responsive Layouts</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Integrated AI Assistant</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Safe Pure JS Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Figma/SaaS Preview Window -->
+        <div class="hero-preview">
+          <div class="hero-preview-window animate-float">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+              <div class="window-url-bar">https://growglobal.network/store/rajesh-artisans</div>
+              <span class="badge badge-demo">LIVE PREVIEW</span>
+            </div>
+            <div class="window-body">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                <div>
+                  <h4 style="font-size: var(--text-base); margin-bottom: 2px;">Rajesh Handcrafted Ceramics</h4>
+                  <p class="text-xs text-muted">Jaipur, India &bull; Global Export Certified</p>
+                </div>
+                <span class="badge badge-success">48 Global Leads</span>
+              </div>
+
+              <!-- Mini Showcase Cards Grid -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-bottom: var(--space-4);">
+                <div class="card" style="padding: var(--space-3); background-color: var(--bg-surface);">
+                  <div style="font-size: 2rem; text-align: center; margin-bottom: 4px;">🏺</div>
+                  <div class="font-semibold text-xs text-center">Blue Pottery Vase</div>
+                  <div class="text-center text-xs" style="color: var(--color-primary); font-weight: 700;">₹2,499 ($30)</div>
+                </div>
+                <div class="card" style="padding: var(--space-3); background-color: var(--bg-surface);">
+                  <div style="font-size: 2rem; text-align: center; margin-bottom: 4px;">🧣</div>
+                  <div class="font-semibold text-xs text-center">Pashmina Shawl</div>
+                  <div class="text-center text-xs" style="color: var(--color-primary); font-weight: 700;">₹4,999 ($60)</div>
+                </div>
+              </div>
+
+              <!-- Live KPI Snapshot -->
+              <div style="background-color: var(--bg-surface); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: var(--space-3); display: flex; justify-content: space-around; text-align: center;">
+                <div>
+                  <div style="font-size: var(--text-sm); font-weight: 800; color: var(--color-primary);">14,250</div>
+                  <div class="text-xs text-muted">Monthly Visitors</div>
+                </div>
+                <div style="border-right: 1px solid var(--border-light);"></div>
+                <div>
+                  <div style="font-size: var(--text-sm); font-weight: 800; color: var(--color-success);">35+</div>
+                  <div class="text-xs text-muted">Countries Reached</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. DEMO STATISTICS BAR
+         ==================================================================== -->
+    <section class="section-sm" style="border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); background-color: var(--bg-surface);">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div>
+              <div class="stat-value">500+</div>
+              <div class="stat-label">Local Businesses Onboarded*</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="background-color: var(--color-success-bg); color: var(--color-success);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <div>
+              <div class="stat-value">120%</div>
+              <div class="stat-label">Inquiry Growth Rate*</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="background-color: var(--color-accent-light); color: var(--color-accent);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div>
+              <div class="stat-value">35+</div>
+              <div class="stat-label">Global Export Markets*</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon" style="background-color: rgba(245, 158, 11, 0.15); color: var(--color-warning);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div>
+              <div class="stat-value">99.9%</div>
+              <div class="stat-label">Platform Reliability*</div>
+            </div>
+          </div>
+        </div>
+        <p class="text-xs text-muted text-center" style="margin-top: var(--space-4);">
+          *Illustrative demonstration figures prepared for 25CS208 – Web Technology academic evaluation.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. SERVICES SECTION
+         ==================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Comprehensive Web Services</span>
+          <h2>Everything You Need to Sell Globally</h2>
+          <p>
+            GrowGlobal provides an end-to-end frontend architecture designed specifically for local creators, handcrafters, boutiques, and emerging brands.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4>Responsive Web Engineering</h4>
+            <p>
+              Handcrafted semantic HTML5, modern CSS Grid, and Flexbox layouts. Flawlessly responsive from 375px smartphones to desktop screens without bulky frameworks.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon" style="background-color: var(--color-secondary-light); color: var(--color-secondary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <h4>Digital Product Showcase</h4>
+            <p>
+              Interactive product catalog with rich details, currency price conversion (INR, USD, EUR), high-resolution imagery, and instant inquiry buttons.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon" style="background-color: var(--color-accent-light); color: var(--color-accent);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h4>Conversational AI Chatbot</h4>
+            <p>
+              Built-in floating assistant answering user queries on pricing, standard packages, and support 24/7 with zero external runtime dependencies.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon" style="background-color: var(--color-success-bg); color: var(--color-success);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h4>Lead Pipeline & Inquiries</h4>
+            <p>
+              Capture qualified customer leads with regex-validated inquiry forms and view them categorized on your secure local business dashboard.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon" style="background-color: rgba(245, 158, 11, 0.15); color: var(--color-warning);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+            </div>
+            <h4>Custom Quotation Calculator</h4>
+            <p>
+              Safe JavaScript calculator engine with zero eval() usage, enabling customers to compute custom hourly quotes at ₹800/hr and assess project ROI.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon" style="background-color: rgba(239, 68, 68, 0.15); color: var(--color-danger);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg>
+            </div>
+            <h4>2-Year Maintenance Warranty</h4>
+            <p>
+              Every website delivered includes a two-year technical maintenance warranty covering agreed frontend bug fixes and browser compatibility updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. FEATURES SECTION
+         ==================================================================== -->
+    <section class="section" id="features" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Platform Engineering</span>
+          <h2>Built With Modern Web Standards</h2>
+          <p>
+            GrowGlobal demonstrates textbook Web Technology mastery with clean separation of concerns, high-contrast dark mode, and zero third-party framework bloat.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h4>Lighthouse 95+ Performance</h4>
+            <p>Optimized vanilla DOM operations, inline SVG icons, and zero render-blocking dependencies ensure blazing fast page loads.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background-color: var(--color-secondary-light); color: var(--color-secondary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h4>Client-Side Security</h4>
+            <p>Strict input sanitization, XSS mitigation, secure password representation, and form submission protection built in.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon" style="background-color: var(--color-accent-light); color: var(--color-accent);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            </div>
+            <h4>Dark & Light Mode Persistence</h4>
+            <p>Full CSS custom properties architecture with smooth theme transitions and automatic LocalStorage persistence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. HOW IT WORKS
+         ==================================================================== -->
+    <section class="section" id="howItWorks">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Simple 4-Step Process</span>
+          <h2>From Local Shop to International Digital Brand</h2>
+          <p>We streamline every step from initial onboarding to global discovery.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h4>Register Business</h4>
+            <p>Complete our quick business onboarding form with your company details and product catalog category.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h4>Select Package</h4>
+            <p>Choose from Basic (₹4,999), Standard (₹9,999), or Premium (₹14,999) or customize hours at ₹800/hr.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h4>We Build & Optimize</h4>
+            <p>Our team crafts your responsive digital storefront with chatbot assistance and currency conversion.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h4>Launch & Grow</h4>
+            <p>Go live on Vercel or custom domain and manage global inquiries directly from your business dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. PRICING PACKAGES & VALUE PROPOSITION
+         ==================================================================== -->
+    <section class="section" id="pricing" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Transparent Investment</span>
+          <h2>Affordable Packages for Growing Businesses</h2>
+          <p>
+            GrowGlobal helps businesses improve their digital visibility, attract potential customers and create more opportunities for revenue growth.
+          </p>
+
+          <!-- Currency Converter Selector -->
+          <div style="margin-top: var(--space-6); display: inline-flex; align-items: center; gap: var(--space-3); background-color: var(--bg-subtle); padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); border: 1px solid var(--border-light);">
+            <label for="pricingCurrencySelect" style="font-size: var(--text-xs); font-weight: 600; text-transform: uppercase;">View Prices in:</label>
+            <select id="pricingCurrencySelect" class="form-select" style="width: auto; padding: 4px 8px; min-height: 32px; font-size: var(--text-xs); border-radius: var(--radius-sm);">
+              <option value="INR" selected>INR (₹)</option>
+              <option value="USD">USD ($)</option>
+              <option value="EUR">EUR (€)</option>
+              <option value="GBP">GBP (£)</option>
+              <option value="AED">AED</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- BASIC PACKAGE -->
+          <div class="pricing-card">
+            <div class="pricing-tier-name">BASIC</div>
+            <p class="text-sm text-muted">Essential online presence for local startups and artisans.</p>
+            <div class="pricing-price" id="priceBasic">
+              ₹4,999 <span>/ project</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Professional Single-Page Landing Site
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Verified Business Information & Map
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Validated Contact Inquiry Form
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Mobile Responsive Design
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-block">Get Started</a>
+          </div>
+
+          <!-- STANDARD PACKAGE (HIGHLIGHTED) -->
+          <div class="pricing-card popular">
+            <div class="popular-badge">MOST POPULAR</div>
+            <div class="pricing-tier-name">STANDARD</div>
+            <p class="text-sm text-muted">Complete showcase site for established local shops and makers.</p>
+            <div class="pricing-price" id="priceStandard">
+              ₹9,999 <span>/ project</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Multi-Section Professional Website
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Digital Product Showcase (Up to 15 items)
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Integrated Conversational AI Chatbot
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Multi-Currency Conversion Display
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                2-Year Technical Maintenance Warranty
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Get Started Standard</a>
+          </div>
+
+          <!-- PREMIUM PACKAGE -->
+          <div class="pricing-card">
+            <div class="pricing-tier-name">PREMIUM</div>
+            <p class="text-sm text-muted">Advanced international digital storefront with dashboard demo.</p>
+            <div class="pricing-price" id="pricePremium">
+              ₹14,999 <span>/ project</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Complete Business Web Application
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Unlimited Product Showcase & Inquiries
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Interactive Business Dashboard Demo
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Technical SEO & Meta OpenGraph Setup
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Priority 24/7 Academic Support
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-block">Get Started Premium</a>
+          </div>
+        </div>
+
+        <!-- Custom Hourly Rate & Bundle Option -->
+        <div class="card card-highlight text-center" style="max-width: 800px; margin: var(--space-10) auto 0 auto; padding: var(--space-8);">
+          <h3>Need Custom Features or Extra Development?</h3>
+          <p style="margin: var(--space-2) 0 var(--space-4) 0;">
+            We offer specialized custom engineering at an hourly development rate of <strong>₹800 per hour</strong>.
+          </p>
+          <div style="display: flex; justify-content: center; gap: var(--space-4); flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal="customBundleModal">Request Custom Bundle Inquiry</button>
+            <a href="home.html" class="btn btn-secondary">Open Project Calculator</a>
+          </div>
+          <p class="text-xs text-muted" style="margin-top: var(--space-4);">
+            Disclaimer: GrowGlobal helps businesses improve their digital visibility and inquiries. We do not promise or guarantee fixed profits or revenue.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. SAMPLE CUSTOMER TESTIMONIALS
+         ==================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-demo">Sample Client Case Studies</span>
+          <h2>Trusted by Local Businesses Expanding Overseas</h2>
+          <p class="text-xs text-muted">
+            The following testimonials are realistic demonstration case studies created for academic evaluation.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p>
+              "Prior to GrowGlobal, our traditional handloom workshop was confined to local bazaar sales. Within 4 weeks of launching our digital storefront, we secured wholesale inquiries from boutique retailers in Germany and Singapore."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RS</div>
+              <div>
+                <div class="font-semibold text-sm">Rajesh Sharma</div>
+                <div class="text-xs text-muted">Master Artisan, Rajesh Handlooms (Varanasi)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              "The multi-currency price converter and mobile-first design made it easy for our international buyers in the UAE and UK to review our organic spice catalog and submit direct inquiries. Truly a commercial-quality platform."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: var(--gradient-primary);">PN</div>
+              <div>
+                <div class="font-semibold text-sm">Priya Nair</div>
+                <div class="text-xs text-muted">Founder, Malabar Organic Spices (Kerala)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              "The built-in assistant chatbot handles repetitive customer queries regarding shipping and dimensions around the clock. Our inquiry conversion increased dramatically thanks to GrowGlobal's clean design."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: var(--gradient-accent);">AP</div>
+              <div>
+                <div class="font-semibold text-sm">Arjun Patel</div>
+                <div class="text-xs text-muted">Creative Director, Heritage Brassware (Moradabad)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION)
+         ==================================================================== -->
+    <section class="section" id="faq" style="background-color: var(--bg-surface); border-top: 1px solid var(--border-light);">
+      <div class="container" style="max-width: 840px;">
+        <div class="section-header">
+          <span class="badge badge-primary">Common Inquiries</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers regarding our platform, packages, and technical specifications.</p>
+        </div>
+
+        <div class="accordion">
+          <!-- Item 1 -->
+          <div class="accordion-item active">
+            <button class="accordion-header" type="button">
+              <span>What is GrowGlobal and how does it help local businesses?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              GrowGlobal is a responsive digital platform created to help small businesses, local shop owners, and artisans bridge the digital divide. By providing high-performance websites with product showcases, interactive chatbots, and inquiry pipelines, local businesses can attract domestic and international clients beyond geographic boundaries.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>What is included in the Standard Package (₹9,999)?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              The Standard package is our most popular option. It includes a multi-section modern website, product showcase for up to 15 items, contact inquiry capture, an integrated conversational AI chatbot, multi-currency conversion, and a two-year technical maintenance warranty.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>Are GrowGlobal websites fully mobile-friendly?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              Yes, absolutely. All templates and components are developed mobile-first. They adapt seamlessly across smartphones (375px+), tablets (768px), laptops (1024px), and wide monitors (1440px+) without horizontal scrolling or distorted layouts.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>What does the 2-Year Maintenance Warranty cover?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              The two-year warranty covers agreed functionality defect corrections, browser compatibility updates, and critical layout fixes. It excludes third-party hosting fees, domain renewals, brand-new feature development, or client-caused code modifications.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span>What technology stack powers GrowGlobal?</span>
+              <span class="accordion-icon">&darr;</span>
+            </button>
+            <div class="accordion-body">
+              GrowGlobal is developed purely using modern HTML5, CSS3 (CSS Grid & Flexbox), and vanilla ES6+ JavaScript. It requires no complex Node build steps and runs smoothly on VS Code Live Server or static hosting platforms like Vercel and GitHub Pages.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. CONTACT FORM SECTION
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-primary">Get In Touch</span>
+          <h2>Connect With Our Digital Team</h2>
+          <p>Ready to bring your local brand to the world stage? Send an inquiry today.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Card -->
+          <div class="contact-info-card">
+            <h4>Contact Information</h4>
+            <p>Our digital engineering team is ready to analyze your business needs and provide a tailored web solution.</p>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Email Address</div>
+                <div class="text-xs text-muted">hello@growglobal.in</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background-color: var(--color-secondary-light); color: var(--color-secondary);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Direct Phone</div>
+                <div class="text-xs text-muted">+91 98765 43210 (Mon-Sat, 9am - 7pm IST)</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" style="background-color: var(--color-accent-light); color: var(--color-accent);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Academic Department</div>
+                <div class="text-xs text-muted">Course 25CS208 – Web Technology, Dept. of Computer Science & Engineering</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="card" style="padding: var(--space-8);">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Rajesh Sharma" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="e.g. rajesh@artisans.in" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contactService" class="form-label">Select Package or Service Needed</label>
+                <select id="contactService" class="form-select">
+                  <option value="Standard Package (₹9,999)">Standard Package (₹9,999) – Recommended</option>
+                  <option value="Basic Package (₹4,999)">Basic Package (₹4,999)</option>
+                  <option value="Premium Package (₹14,999)">Premium Package (₹14,999)</option>
+                  <option value="Custom Bundle (₹800/hr)">Custom Development (₹800/hr)</option>
+                  <option value="General Consultation">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Business Details & Requirements <span class="required">*</span></label>
+                <textarea id="contactMessage" class="form-control" placeholder="Tell us about your business, products, and target international customers..." required></textarea>
+              </div>
+
+              <button type="submit" id="contactSubmitBtn" class="btn btn-primary btn-block btn-lg">
+                Send Inquiry Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       11. CUSTOM BUNDLE INQUIRY MODAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="customBundleModal" role="dialog" aria-modal="true" aria-labelledby="bundleModalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bundleModalTitle">Custom Bundle Inquiry</h3>
+        <button class="modal-close" data-close-modal aria-label="Close Modal">&times;</button>
+      </div>
+      <form id="bundleQuoteForm">
+        <div class="modal-body">
+          <p class="text-sm text-secondary" style="margin-bottom: var(--space-4);">
+            Our baseline standard rate is <strong>₹800 per developer hour</strong>. Estimate your custom project bundle below:
+          </p>
+          <div class="form-group">
+            <label for="bundleName" class="form-label">Your Name</label>
+            <input type="text" id="bundleName" class="form-control" placeholder="Rajesh Artisan" required />
+          </div>
+          <div class="form-group">
+            <label for="bundleEmail" class="form-label">Email Address</label>
+            <input type="email" id="bundleEmail" class="form-control" placeholder="name@business.com" required />
+          </div>
+          <div class="form-group">
+            <label for="bundleHours" class="form-label">Estimated Development Hours Needed</label>
+            <input type="number" id="bundleHours" class="form-control" value="10" min="1" max="100" />
+            <div class="text-xs text-muted" style="margin-top: 4px;">At ₹800/hr = ₹8,000 + Standard base</div>
+          </div>
+          <div class="form-group">
+            <label for="bundleNotes" class="form-label">Specific Feature Requirements</label>
+            <textarea id="bundleNotes" class="form-control" rows="3" placeholder="Describe any specialized features needed (e.g., custom payment flow, multilingual catalog, export documentation)..."></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-ghost" data-close-modal>Cancel</button>
+          <button type="submit" class="btn btn-primary">Submit Custom Proposal Request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       12. FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <span>Grow<strong style="color: var(--color-primary);">Global</strong></span>
+          </a>
+          <p>
+            GrowGlobal – A Responsive Digital Platform to Help Local Businesses Reach Global Customers. Built with pure HTML5, CSS3, and ES6+ JavaScript.
+          </p>
+          <p class="text-xs text-muted" style="margin-top: var(--space-2);">
+            Tagline: <em>From Local Business to Global Brand.</em>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <div class="footer-links">
+            <a href="#hero">Overview</a>
+            <a href="#features">Features</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing Packages</a>
+            <a href="home.html">Business Dashboard</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Client Access</h5>
+          <div class="footer-links">
+            <a href="register.html">Register Business</a>
+            <a href="signup.html">Quick Sign Up</a>
+            <a href="signin.html">Sign In Portal</a>
+            <a href="home.html">Dashboard Demo</a>
+            <a href="docs/SRS.md">IEEE 830 SRS</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Academic Metadata</h5>
+          <div class="footer-links">
+            <span class="text-xs text-muted">Course: 25CS208</span>
+            <span class="text-xs text-muted">Subject: Web Technology</span>
+            <span class="text-xs text-muted">Academic Year: 2026–2027</span>
+            <span class="text-xs text-muted">Type: Frontend Microproject</span>
+            <span class="text-xs text-muted">Rate: ₹800/hr Baseline</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026–2027 GrowGlobal. All rights reserved. 25CS208 Academic Microproject.
+        </div>
+        <div>
+          <span>Designed with Stripe & Linear inspired aesthetics.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Modules -->
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

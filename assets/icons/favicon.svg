@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="ggGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#ggGrad)" />
+  <!-- Stylized Globe with Ascending Arrow -->
+  <circle cx="24" cy="24" r="14" stroke="#FFFFFF" stroke-width="2.5" fill="none" opacity="0.85" />
+  <ellipse cx="24" cy="24" rx="7" ry="14" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.85" />
+  <line x1="10" y1="24" x2="38" y2="24" stroke="#FFFFFF" stroke-width="2" opacity="0.85" />
+  <path d="M22 32 L34 20 M34 20 L26 20 M34 20 L34 28" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
